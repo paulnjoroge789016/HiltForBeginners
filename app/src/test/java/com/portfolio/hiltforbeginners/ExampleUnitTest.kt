@@ -1,4 +1,4 @@
-package com.portfolio.koinforbeginners
+package com.portfolio.hiltforbeginners
 
 import org.junit.Test
 
