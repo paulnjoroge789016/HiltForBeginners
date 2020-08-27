@@ -9,6 +9,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
+    //field injection using android hilt
     @Inject lateinit var allNames: AllNames
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-
+//constructor injection using android hilt
 class AllNames @Inject constructor(val lastName: LastName){
     fun getAllNames(): String {
         return "paul ${lastName.lastNam()}"
